@@ -39,7 +39,7 @@ export function Home() {
       </Flex>
         <View height="100vh">
           <Image
-            src="https://cunninghamapartments/cunningham_shade.jpg"
+            src="https://cunninghamapartments/Cunningham_shade.jpg"
             width="100%"
             height="100%"
             objectFit="cover"
