@@ -12,8 +12,9 @@ export default function App() {
   const { user } = useAuthenticator();
 
   if (user) {
+    
     return <Home />;
   }
-
+  
   return <Login />;
 }
