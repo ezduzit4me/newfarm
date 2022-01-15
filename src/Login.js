@@ -41,7 +41,7 @@ import {
         </Flex>
         <View height="100vh">
           <Image
-            src="https://cunninghamapartments.net/cunningham.jpg"
+            src="https://cunninghamapartments.imgix.net/cunningham.jpg"
             width="100%"
             height="100%"
             objectFit="cover"

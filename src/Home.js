@@ -13,6 +13,7 @@ import { useAuthenticator } from "@aws-amplify/ui-react";
 
 
 
+
 export function Home() {
   const { signOut, user } = useAuthenticator();
   const { tokens } = useTheme();
@@ -42,7 +43,7 @@ export function Home() {
       <pr> &nbsp;</pr>
       <pr><h3>Utility Bills</h3></pr>
       <pr> &nbsp;</pr>
-      <pr><a href="http://127.0.0.1/utility">Utility</a></pr>
+      <pr><a href="http://127.0.0.1/utilities">Utility</a></pr>
       <pr><h3>Pets Policy</h3></pr>
       <pr> &nbsp;</pr>
       <pr><a href="http://127.0.0.1/pet">Pets</a></pr>
@@ -51,7 +52,7 @@ export function Home() {
       <pr><a href="http://127.0.0.1/slack">Slack</a></pr>
       <pr><h3>Committee</h3></pr>
       <pr> &nbsp;</pr>
-      <pr><a href="http://127.0.0.1/committee">Utility</a></pr>
+      <pr><a href="http://127.0.0.1/committee">Committee</a></pr>
       <pr><h3>Manager</h3></pr>
       <pr> &nbsp;</pr>
       <pr><a href="http://127.0.0.1/manager">Manager</a></pr>
@@ -68,7 +69,7 @@ export function Home() {
       </Flex>
         <View height="100vh">
           <Image
-            src="http://127.0.0.1:3000/Cunningham_shade.jpg"
+            src="https://cunninghamapartments.imgix.net/Cunningham_shade.jpg"
             width="100%"
             height="100%"
             objectFit="cover"
@@ -77,4 +78,5 @@ export function Home() {
       </Grid>
   );
 }
+
 
