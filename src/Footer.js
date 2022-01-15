@@ -5,7 +5,8 @@ export function Footer() {
 
   return (
     <Flex justifyContent="center" padding={tokens.space.medium}>
-      <Text>&copy; All Rights Reserved</Text>
+      <Text> CUNNINGHAM APARTMENTS <br/>
+       66 Lamington St New Farm 4005 </Text>
     </Flex>
   );
 }
