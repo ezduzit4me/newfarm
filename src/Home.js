@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+
 import {
   
   Flex,
@@ -14,10 +17,16 @@ import { useAuthenticator } from "@aws-amplify/ui-react";
 
 
 
-export function Home() {
+export default function Home() {
   const { signOut, user } = useAuthenticator();
   const { tokens } = useTheme();
+
+
+
   return (
+
+    
+
     
     <Grid templateColumns={{ base: "1fr 0", medium: "1fr 1fr" }}>
       
@@ -32,6 +41,7 @@ export function Home() {
       align-items="center"
     >
       
+      
       <div>
     
       <h2>Welcome to Cunningham {user.username}</h2><br></br>
@@ -43,25 +53,25 @@ export function Home() {
       <pr> &nbsp;</pr>
       <pr><h3>Utility Bills</h3></pr>
       <pr> &nbsp;</pr>
-      <pr><a href="http://127.0.0.1/utilities">Utility</a></pr>
+      <pr><Link to= "utility">Utilities</Link></pr>
       <pr><h3>Pets Policy</h3></pr>
       <pr> &nbsp;</pr>
-      <pr><a href="http://127.0.0.1/pet">Pets</a></pr>
+      <pr><Link to= "pet">Pets</Link></pr>
       <pr><h3>Communicate with Residents</h3></pr>
       <pr> &nbsp;</pr>
-      <pr><a href="http://127.0.0.1/slack">Slack</a></pr>
+      <pr><Link to= "contact">Keep in Touch</Link></pr>
       <pr><h3>Committee</h3></pr>
       <pr> &nbsp;</pr>
-      <pr><a href="http://127.0.0.1/committee">Committee</a></pr>
+      <pr><Link to= "committee">Committee</Link></pr>
       <pr><h3>Manager</h3></pr>
       <pr> &nbsp;</pr>
-      <pr><a href="http://127.0.0.1/manager">Manager</a></pr>
+      <pr><Link to= "manager">Manager</Link></pr>
       <pr><h3>Maintenance</h3></pr>
       <pr> &nbsp;</pr>
-      <pr><a href="http://127.0.0.1/maintenance">Maintenance</a></pr>
+      <pr><Link to= "maintenance">Maintenance</Link></pr>
       <pr><h3>Financials</h3></pr>
       <pr> &nbsp;</pr>
-      <pr><a href="http://127.0.0.1/maintenance">Financial</a></pr>
+      <pr><Link to= "financial">Financial</Link></pr>
       </div>
       
       <button onClick={signOut}>Sign out</button>
@@ -69,7 +79,7 @@ export function Home() {
       </Flex>
         <View height="100vh">
           <Image
-            src="https://cunninghamapartments.imgix.net/Cunningham_shade.jpg"
+            src="https://cunninghamapartments.imgix.net/Cunningham_ext_1.jpg"
             width="100%"
             height="100%"
             objectFit="cover"
