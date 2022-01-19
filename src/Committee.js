@@ -31,16 +31,52 @@ import {
 
           <Authenticator components={components}>
             {({ signOut, user }) => (
-              <main>
-                <h1>Hello {user.username}</h1>
-
-                <p>Committee Information Here</p>
-
-
-
-
-                <button onClick={signOut}>Sign out</button>
-              </main>
+               <div>
+               <div className="navbar">
+     <div className="container flex">
+       <h1 className="logo">Committee</h1>
+         
+     </div>
+   </div>
+   <section className="showcase">
+     <div className="container">
+         <div className="grid">
+           <div className="grid-item-1">
+             <div className="showcase-text">
+               <h1>Participate</h1>
+               <p className="supporting-text">...In Your Environment</p>
+             </div>
+             <div className="showcase-form">
+               
+               
+             </div>
+           </div>
+   
+           <div className="grid-item-2">
+             <div className="image">
+               <img src="https://cunninghamapartments.imgix.net/Cunningham_int_2.jpg" alt="" />
+             </div>
+           </div>
+        </div>
+   
+        </div>
+   </section> 
+   <section className="stats">
+           <div className="flex">
+             <div className="stat">
+               <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
+               <h3 className="title">Questions</h3>
+               <p className="text">TBA</p>
+             <p className="text"> TBA</p>
+            <p className="text"> TBA</p>
+             </div>
+             
+             
+           </div>
+         </section>    
+   
+             <button onClick={signOut}>Sign out</button>
+           </div>
             )}
           </Authenticator>
         </Flex>

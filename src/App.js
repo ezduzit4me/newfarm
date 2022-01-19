@@ -14,7 +14,7 @@ import Home from './Home'
 import { Login } from "./Login";
 
 import "./styles.css";
-
+import "./newstyles.css";
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 

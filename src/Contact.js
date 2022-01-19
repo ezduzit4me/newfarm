@@ -28,13 +28,52 @@ import {
         >
           <Authenticator components={components}>
             {({ signOut, user }) => (
-              <main>
-                <h1>Hello {user.username}</h1>
-
-                <p>Communication Information Here</p>
-
-                <button onClick={signOut}>Sign out</button>
-              </main>
+              <div>
+              <div className="navbar">
+    <div className="container flex">
+      <h1 className="logo">Contacts</h1>
+        
+    </div>
+  </div>
+  <section className="showcase">
+    <div className="container">
+        <div className="grid">
+          <div className="grid-item-1">
+            <div className="showcase-text">
+              <h1>Keep in the picture</h1>
+              <p className="supporting-text">Use our Slack Facility</p>
+            </div>
+            <div className="showcase-form">
+              
+              
+            </div>
+          </div>
+  
+          <div className="grid-item-2">
+            <div className="image">
+              <img src="https://cunninghamapartments.imgix.net/Slack.png" alt="" />
+            </div>
+          </div>
+       </div>
+  
+       </div>
+  </section> 
+  <section className="stats">
+          <div className="flex">
+            <div className="stat">
+              <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
+              <h3 className="title">Slack</h3>
+              <p className="text">Slack is groupware which enables you to read and discuss our local issues</p>
+            <p className="text">Slack enable you to communicate person to person or as a group</p>
+           <p className="text"> You wish to be on Slack? Send your email to committee@cunninghamapartments.net</p>
+            </div>
+            
+            
+          </div>
+        </section>    
+  
+            <button onClick={signOut}>Sign out</button>
+          </div>
             )}
           </Authenticator>
         </Flex>

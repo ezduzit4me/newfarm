@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 
 import {
@@ -72,14 +72,18 @@ export default function Home() {
       <pr><h3>Financials</h3></pr>
       <pr> &nbsp;</pr>
       <pr><Link to= "financial">Financial</Link></pr>
-      </div>
       
+      <pr>&nbsp;</pr><br></br>
+      <pr>&nbsp;</pr><br></br>
+      <pr className="text"> OK the nucleus of this site is up - still some visual tidying, spacing etc. However as you go through it there are big gaps in the information. You can help by not suggesting the sort of information but by actually writing the copy</pr>
+      </div>
+
       <button onClick={signOut}>Sign out</button>
       
       </Flex>
         <View height="100vh">
           <Image
-            src="https://cunninghamapartments.imgix.net/Cunningham_ext_1.jpg"
+            src="https://cunninghamapartments.imgix.net/Cunningham_ext_14.jpg"
             width="100%"
             height="100%"
             objectFit="cover"
