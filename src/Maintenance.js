@@ -51,7 +51,7 @@ import {
    
            <div className="grid-item-2">
              <div className="image">
-               <img src="https://cunninghamapartments.imgix.net/Cunningham_int_2.jpg" alt="" />
+               <img src="https://cunninghamapartments.imgix.net/Maintenance.jpg" alt="" />
              </div>
            </div>
         </div>
