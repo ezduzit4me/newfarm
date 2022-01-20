@@ -31,8 +31,8 @@ import {
                <div>
                <div className="navbar">
      <div className="container flex">
-       <h1 className="logo">Maintenance</h1>
-         
+       <h1 className="logo">&nbsp;&nbsp;&nbsp;Maintenance</h1>
+       <button className= "btn" onClick={signOut}>Sign out</button> 
      </div>
    </div>
    <section className="showcase">
@@ -40,7 +40,7 @@ import {
          <div className="grid">
            <div className="grid-item-1">
              <div className="showcase-text">
-               <h1> Shared Responsibility</h1>
+               <h1> &nbsp;&nbsp;&nbsp;Shared Responsibility</h1>
                <p className="supporting-text"></p>
              </div>
              <div className="showcase-form">
@@ -73,7 +73,7 @@ import {
            </div>
          </section>    
    
-             <button onClick={signOut}>Sign out</button>
+         
            </div>
             )}
           </Authenticator>

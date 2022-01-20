@@ -32,7 +32,7 @@ export default function Utility() {
             <div className="navbar">
   <div className="container flex">
     <h1 className="logo">Utilities</h1>
-      
+    <button className= "btn" onClick={signOut}>Sign out</button> 
   </div>
 </div>
 <section className="showcase">
@@ -40,8 +40,8 @@ export default function Utility() {
       <div className="grid">
         <div className="grid-item-1">
           <div className="showcase-text">
-            <h1>Responsibilities</h1>
-            <p className="supporting-text">Be water wise</p>
+            <h1>&nbsp;&nbsp;&nbsp;Responsibilities</h1>
+            <p className="supporting-text">&nbsp;&nbsp;&nbsp;Be water wise</p>
           </div>
           <div className="showcase-form">
             
@@ -74,7 +74,7 @@ export default function Utility() {
         </div>
       </section>    
 
-          <button onClick={signOut}>Sign out</button>
+         
         </div>
           )}
         </Authenticator>

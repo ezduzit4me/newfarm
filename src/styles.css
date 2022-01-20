@@ -8,8 +8,7 @@ body {
 }
 
 :root {
-  --amplify-fonts-default-variable: "Open Sans";
-  --amplify-fonts-default-static: "Open Sans";
+  
   --amplify-colors-brand-primary-10: var(--amplify-colors-blue-10);
   --amplify-colors-brand-primary-20: var(--amplify-colors-blue-20);
   --amplify-colors-brand-primary-40: var(--amplify-colors-blue-40);

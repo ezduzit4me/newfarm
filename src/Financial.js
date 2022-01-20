@@ -31,8 +31,8 @@ import {
                <div>
                <div className="navbar">
      <div className="container flex">
-       <h1 className="logo">Financial</h1>
-         
+       <h1 className="logo">&nbsp;&nbsp;&nbsp;Financial</h1>
+       <button className= "btn" onClick={signOut}>Sign out</button> 
      </div>
    </div>
    <section className="showcase">
@@ -40,8 +40,8 @@ import {
          <div className="grid">
            <div className="grid-item-1">
              <div className="showcase-text">
-               <h1>Statements</h1>
-               <p className="supporting-text">...Levies</p>
+               <h1>&nbsp;&nbsp;&nbsp;Statements</h1>
+               <p className="supporting-text">&nbsp;&nbsp;&nbsp;...Levies</p>
              </div>
              <div className="showcase-form">
                
@@ -72,7 +72,7 @@ import {
            </div>
          </section>    
    
-             <button onClick={signOut}>Sign out</button>
+         
            </div>
             )}
           </Authenticator>
