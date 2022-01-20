@@ -34,7 +34,7 @@ export default function Home() {
     
       backgroundColor={tokens.colors.background.secondary}
       padding= ".5rem"
-      height= "300px"
+      height= "1200px"
       box-shadow= "2px 2px 5px rgba(0,0,0,0.03)"
       border-radius= "4px"
       justifyContent="center"
@@ -42,43 +42,22 @@ export default function Home() {
     >
       
       
-      <div>
-    
-      <h2>Welcome to Cunningham {user.username}</h2><br></br>
-      
-      
-      <pr> This is an information site for Cunningham Apartments being currently constructed.&nbsp;</pr>
-      <pr>You will be able to read about relevant topics by following the links below:</pr>
-      <pr> &nbsp;</pr>
-      <pr> &nbsp;</pr>
-      <pr><h3>Utility Bills</h3></pr>
-      <pr> &nbsp;</pr>
-      <pr><Link to= "utility">Utilities</Link></pr>
-      <pr><h3>Pets Policy</h3></pr>
-      <pr> &nbsp;</pr>
-      <pr><Link to= "pet">Pets</Link></pr>
-      <pr><h3>Communicate with Residents</h3></pr>
-      <pr> &nbsp;</pr>
-      <pr><Link to= "contact">Keep in Touch</Link></pr>
-      <pr><h3>Committee</h3></pr>
-      <pr> &nbsp;</pr>
-      <pr><Link to= "committee">Committee</Link></pr>
-      <pr><h3>Manager</h3></pr>
-      <pr> &nbsp;</pr>
-      <pr><Link to= "manager">Manager</Link></pr>
-      <pr><h3>Maintenance</h3></pr>
-      <pr> &nbsp;</pr>
-      <pr><Link to= "maintenance">Maintenance</Link></pr>
-      <pr><h3>Financials</h3></pr>
-      <pr> &nbsp;</pr>
-      <pr><Link to= "financial">Financial</Link></pr>
-      
-      <pr>&nbsp;</pr><br></br>
-      <pr>&nbsp;</pr><br></br>
-      <pr className="text"> OK the nucleus of this site is up - still some visual tidying, spacing etc. However as you go through it there are big gaps in the information. You can help by not suggesting the sort of information but by actually writing the copy</pr>
+      <div class="navbar">
+        <div class="container flex">
+        <nav>
+          <ul>
+      <li class="nav"><Link to= "utility">Utilities</Link></li>
+      <li class="nav"><Link to= "pet">Pets</Link></li>
+      <li class="nav"><Link to= "contact">Contact</Link></li>
+      <li class="nav"><Link to= "committee">Committee</Link></li>
+      <li class="nav"><Link to= "manager">Manager</Link></li>
+      <li class="nav"><Link to= "maintenance">Maintenance</Link></li>
+       <li class="nav"><Link to= "financial">Financial</Link></li>
+      </ul>
+      </nav>
       </div>
-
-      <button onClick={signOut}>Sign out</button>
+      </div>
+     
       
       </Flex>
         <View height="100vh">
