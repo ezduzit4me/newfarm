@@ -65,6 +65,7 @@ import {
               <h3 className="title">Slack</h3>
               <p className="text">Slack is groupware which enables you to read and discuss our local issues</p>
             <p className="text">Slack enable you to communicate person to person or as a group</p>
+            <h3 className="title">Join</h3>
            <p className="text"> You wish to be on Slack? Send your email to committee@cunninghamapartments.net</p>
             </div>
             

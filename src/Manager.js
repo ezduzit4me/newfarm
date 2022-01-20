@@ -40,8 +40,8 @@ import {
          <div className="grid">
            <div className="grid-item-1">
              <div className="showcase-text">
-               <h1>Adrian</h1>
-               <p className="supporting-text">Introduce yourself</p>
+               <h1>Adrian Bullock</h1>
+               <p className="supporting-text"></p>
              </div>
              <div className="showcase-form">
                
@@ -63,9 +63,10 @@ import {
              <div className="stat">
                <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
                <h3 className="title">Responsibilities</h3>
-               <p className="text">TBA</p>
-             <p className="text"> TBA</p>
-            <p className="text"> TBA</p>
+               <p className="text">Our Building Manager is employed on a long term basis to manage the property. Adrian does not live on the premises but can be called out in cases of urgency</p>
+             <p className="text">He is responsible for building repairs and rectifications and in conjunction with the Committee for long term projects</p>
+             <h3 className="title">Contact Details</h3>
+            <p className="text"> </p>
              </div>
              
              

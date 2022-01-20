@@ -40,8 +40,8 @@ import {
          <div className="grid">
            <div className="grid-item-1">
              <div className="showcase-text">
-               <h1>Budgeting</h1>
-               <p className="supporting-text">Levies</p>
+               <h1>Statements</h1>
+               <p className="supporting-text">...Levies</p>
              </div>
              <div className="showcase-form">
                
@@ -63,9 +63,9 @@ import {
              <div class="stat">
                <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
                <h3 className="title">Levies</h3>
-               <p className="text">TBA</p>
-             <p className="text"> TBA</p>
-            <p className="text"> TBA</p>
+               <p className="text">Your levies go towards maintaining the building not only at present but in the future. Provision for future costs for aging buildings can not be avoided. At Cunningham we have had some significant costs due to improvements and plumbing issues. Hopefully these costs are behind us however at this point beginning of 2022 our sinking funds are depleted and need to be improved.</p>
+               <h3 className="title">Statements</h3>
+            <p className="text">Monthly income expenditure statements are included in our 'Slack' facility. Consolidated statements are available at AGM time</p>
              </div>
              
              

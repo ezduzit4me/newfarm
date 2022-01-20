@@ -65,8 +65,9 @@ import {
            <div className="flex">
              <div className="stat">
                <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
-               <h3 className="title">Questions</h3>
-               <p className="text">TBA</p>
+               
+               <h3 className="title">Contact Details</h3>
+               <p className="text">committee@cunninghamapartments.net</p>
              <p className="text"> TBA</p>
             <p className="text"> TBA</p>
              </div>

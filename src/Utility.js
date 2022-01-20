@@ -64,8 +64,10 @@ export default function Utility() {
             <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
             <h3 className="title">Billing</h3>
             <p className="text">Some Utilities like electricity, internet and gas hot water are individually charged. Your water bill is a shared bill between all 33 residences</p>
+            <h3 className="title">Water</h3>
           <p className="text"> Apart from apartment usage water is used on a community basis to water gardens on a timer and the wash bay</p>
-         <p className="text"> Your hot water bill is derived from a meter on the hot water line in your apartment. This meter is read remotely</p>
+          <h3 className="title">Hot Water</h3>
+         <p className="text"> Your hot water bill is derived from a meter on the hot water line in your apartment. This meter is read remotely. Gas Hot Water Systems are located externally on the southern end of the building</p>
           </div>
           
           

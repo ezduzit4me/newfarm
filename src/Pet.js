@@ -41,7 +41,7 @@ import {
         <div className="grid">
           <div className="grid-item-1">
             <div className="showcase-text">
-              <h1>Your Responsibilities</h1>
+              <h1>Responsible Ownership</h1>
               <p className="supporting-text">Shared Space</p>
             </div>
             <div className="showcase-form">
@@ -63,10 +63,12 @@ import {
           <div className="flex">
             <div className="stat">
               <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
-              <h3 className="title">Permission</h3>
-              <p className="text">TBA</p>
-            <p className="text"> TBA</p>
-           <p className="text"> TBA</p>
+              <h3 className="title">Requirements</h3>
+              <p className="text">You are required to get approval from the Body Corporate before bringing a pet on a full time basis. Details of the pet are required in particular size and weight.</p>
+              <h3 className="title">Behaviour</h3>
+            <p className="text">Pet behaviour is a big issue particularly in these times of Covid when we have a significant number of people working from their apartment at all hours. Barking dogs are not tolerated and action will be taken to get you to remove the animal</p>
+            <h3 className="title">Dog Parks</h3>
+       <p className="text">There is a dog park a couple of blocks away where you have the opportunity to allow your dog to run free. There are also on-leash parks within a short distance</p>
             </div>
             
             
