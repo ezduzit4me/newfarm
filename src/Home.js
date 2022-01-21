@@ -14,9 +14,6 @@ import { useAuthenticator } from "@aws-amplify/ui-react";
 
 
 
-
-
-
 export default function Home() {
   const { signOut, user } = useAuthenticator();
   const { tokens } = useTheme();
