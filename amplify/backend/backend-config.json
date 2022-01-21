@@ -1,6 +1,6 @@
 {
   "auth": {
-    "newfarm166f0391": {
+    "newfarm8003213e": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -29,7 +29,7 @@
     "amplifyhosting": {
       "service": "amplifyhosting",
       "type": "cicd",
-      "lastPushTimeStamp": "2022-01-13T08:05:18.121Z"
+      "lastPushTimeStamp": "2022-01-21T06:49:38.449Z"
     }
   }
 }
