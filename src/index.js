@@ -2,7 +2,7 @@ import { AmplifyProvider, Authenticator } from "@aws-amplify/ui-react";
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import {  BrowserRouter as Router } from 'react-router-dom';
-
+import Navbar from './Navbar';
 import App from "./App";
 
 
@@ -16,8 +16,10 @@ ReactDOM.render(
     <AmplifyProvider>
       <Authenticator.Provider>
       <Router>
+        <Navbar />
         <App />
        </Router>
+
       </Authenticator.Provider>
     </AmplifyProvider>
     
