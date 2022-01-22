@@ -54,7 +54,7 @@ import {
    
            <div className="grid-item-2">
              <div className="image">
-               <img src="https://cunninghamapartments.imgix.net/Cunningham_int_2.jpg" alt="" />
+               <img src="https://cunninghamapartments.imgix.net/cunningham_220.jpg" alt="" />
              </div>
            </div>
         </div>
@@ -66,10 +66,11 @@ import {
              <div className="stat">
                <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
                
-               <h3 className="title">Contact Details</h3>
+               <h3 className="title">Committee</h3>
+               <p className="text"> The Committee currently comprises 7 members elected annually at the AGM. Your Slack link will outline the current members, their names and enable you to contact them individually or as a group</p>
+               <h3 className="title">Email Contact</h3>
                <p className="text">committee@cunninghamapartments.net</p>
-             <p className="text"> TBA</p>
-            <p className="text"> TBA</p>
+             
              </div>
              
              

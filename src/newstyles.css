@@ -22,7 +22,7 @@ a {
 
 h1 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   margin: 10px 0;
   line-height: 1.2;
 }
@@ -36,7 +36,7 @@ h2 {
 }
 
 p {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 img {
@@ -190,7 +190,7 @@ footer a:hover {
 
 .text {
   color: black;
-  font-size: 16px;
+  font-size: 15px;
   width: 100%;
   padding: 10px;
   margin: 0, 20px;

@@ -43,8 +43,8 @@ export default function Home() {
        <div className="grid">
          <div className="grid-item-1">
            <div className="showcase-text">
-             <h1>&nbsp;&nbsp;&nbsp;Participate</h1>
-             <p className="supporting-text">&nbsp;&nbsp;&nbsp;...In Your Environment</p>
+             <h1>&nbsp;&nbsp;&nbsp;Cunningham</h1>
+             <p className="supporting-text">&nbsp;&nbsp;&nbsp;...66 Lamington St</p>
            </div>
            <div className="showcase-form">
              
@@ -54,7 +54,7 @@ export default function Home() {
  
          <div className="grid-item-2">
            <div className="image">
-             <img src="https://cunninghamapartments.imgix.net/Cunningham_int_2.jpg" alt="" />
+             <img src="https://cunninghamapartments.imgix.net/Home_220.jpg" alt="" />
            </div>
          </div>
       </div>
@@ -66,10 +66,12 @@ export default function Home() {
            <div className="stat">
              <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
              
-             <h3 className="title">Contact Details</h3>
-             <p className="text">committee@cunninghamapartments.net</p>
-           <p className="text"> TBA</p>
-          <p className="text"> TBA</p>
+             <h3 className="title">General</h3>
+             <p className="text">Cunningham Apartments comprise 33 individual two and three bedroom apartments. These apartments were built by Mirvac to a superior quality of finish and soundproofing. The complex consists of 5 seperate modules each with its own security entrance. Access can also be gained to each module through the garage.</p>
+             <h3 className="title">Management</h3>
+          <p className="text">Financial Maintenance and Administration are handled jointly by a legislatively required management company, a body corporate committe who are elected yearly, and a non onsite Manager</p>
+          <h3 className="title">Contact</h3>
+          <p className="text"> Contact details for the above entities are in the link above</p>
            </div>
            
            
