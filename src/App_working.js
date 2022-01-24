@@ -1,4 +1,6 @@
-import { Authenticator } from "@aws-amplify/ui-react";
+
+
+import { useAuthenticator } from "@aws-amplify/ui-react";
 import { Amplify } from "aws-amplify";
 import { Routes,Route } from "react-router-dom";
 import Utility from './Utility'
@@ -9,7 +11,7 @@ import Contact from './Contact'
 import Pet from './Pet'
 import Manager from './Manager'
 import Home from './Home'
-
+import { Login } from "./Login";
 
 import "./styles.css";
 import "./newstyles.css";
@@ -18,13 +20,14 @@ Amplify.configure(awsExports);
 
 export default function App() {
  
-   
+  const { user } = useAuthenticator();
+  
+  
+  
 
-   
-  return  (
-    <Authenticator>
-    {({ signOut, user }) => (
-      <div className="App">
+  if (user)   {
+     
+    return  (
   <Routes>
           <Route path="/" element=  {<Home/>} /> 
           <Route path="/utility" element= {<Utility/>} />  
@@ -34,16 +37,11 @@ export default function App() {
           <Route path="/contact" element= {<Contact/>} />
           <Route path="/pet" element= {<Pet/>} />
           <Route path="/manager" element= {<Manager/>} />
-    </Routes>  
-    </div> 
-)}
-
-
-    </Authenticator>
+    </Routes>   
 
     );
-   
-   
+    
   }
 
-  
+  return <Login />;
+}

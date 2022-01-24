@@ -260,7 +260,7 @@ footer a:hover {
 }
 
 /* Tablets and Under */
-@media(max-width: 768px) {
+@media(max-width: 800px) {
   .grid,
   .grid-3 {
     grid-template-columns: 1fr;

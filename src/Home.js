@@ -92,5 +92,6 @@ export default function Home() {
         />
       </View>
     </Grid>
+    
   );
 }
