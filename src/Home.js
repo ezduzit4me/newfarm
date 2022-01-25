@@ -69,9 +69,9 @@ export default function Home() {
              <h3 className="title">General</h3>
              <p className="text">Cunningham Apartments comprise 33 individual two and three bedroom apartments. These apartments were built by Mirvac to a superior quality of finish and soundproofing. The complex consists of 5 seperate modules each with its own security entrance. Access can also be gained to each module through the garage.</p>
              <h3 className="title">Management</h3>
-          <p className="text">Financial Maintenance and Administration are handled jointly by a legislatively required management company, a body corporate committe who are elected yearly, and a non onsite Manager</p>
+          <p className="text">Maintenance, Administration, and Finance are handled jointly by a legislatively required management company, a body corporate committe who are elected yearly, and a non onsite Manager</p>
           <h3 className="title">Contact</h3>
-          <p className="text"> Contact details for the above entities are in the link above</p>
+          <p className="text"> Contact details for the above entities can be found in the 'Contact' link</p>
            </div>
            
            

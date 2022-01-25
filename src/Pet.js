@@ -64,11 +64,13 @@ import {
             <div className="stat">
               <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
               <h3 className="title">Requirements</h3>
-              <p className="text">You are required to get approval from the Body Corporate before bringing a pet on a full time basis. Details of the pet are required in particular size and weight.</p>
+              <p className="text">Pet owners are required to get approval from the Body Corporate before bringing a pet on a full time basis. Details of the pet are required in particular size and weight.</p>
               <h3 className="title">Behaviour</h3>
-            <p className="text">Pet behaviour is a big issue particularly in these times of Covid when we have a significant number of people working from their apartment at all hours. Barking dogs are not tolerated and action will be taken to get you to remove the animal</p>
+            <p className="text">Pet behaviour is a big issue particularly in these times of Covid when we have a significant number of people working from their apartment at all hours. Continuously barking dogs are not tolerated and action will be taken to remove the animal</p>
             <h3 className="title">Dog Parks</h3>
-       <p className="text">There is a dog park a couple of blocks away where you have the opportunity to allow your dog to run free. There are also on-leash parks within a short distance</p>
+           <p className="text">There is a dog park a couple of blocks away where you have the opportunity to allow your dog to run free. There are also on-leash parks within a short distance</p>
+           <h3 className="title">Park Responsiblity</h3>
+           <p className="text">The jewel that is Welsby Park which fronts all units and adds value to your property is a popular dog walking park. Some outside dog owners illegally allow their dogs to run free and defecate without collection. It is in all our interest to remind them of their responsibilities less our beautiful park be turned into a dustbowl</p>
             </div>
             
             

@@ -65,10 +65,10 @@ import {
             <div className="stat">
               <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
               <h3 className="title">Slack</h3>
-              <p className="text">Slack is groupware which enables you to read and discuss our local issues</p>
-            <p className="text">Slack enables you to communicate person to person or as a group</p>
+              <p className="text">Cunningham Apartments have a 'Slack' Channel. Slack is groupware which enables you to read and discuss our local issues</p>
+            <p className="text">Slack enables you to communicate person to person or as a group and to contact the Committee and for the Committee to contact you </p>
             <h3 className="title">Join</h3>
-           <p className="text"> You wish to be on Slack? Send your email to committee@cunninghamapartments.net</p>
+           <p className="text"> You wish to be on Slack? Send your email to committee@cunninghamapartments.net. You will be sent a self explanatory link</p>
             </div>
             
             

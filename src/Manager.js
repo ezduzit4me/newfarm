@@ -66,7 +66,7 @@ import {
                <p className="text">Our Building Manager is employed on a long term basis to manage the property. Adrian does not live on the premises but can be called out in cases of urgency</p>
              <p className="text">He is responsible for building repairs and rectifications and in conjunction with the Committee for long term projects</p>
              <h3 className="title">Contact Details</h3>
-            <p className="text"> </p>
+            <p className="text"> Email: adrian@caretaker1.com.au </p>
              </div>
              
              
