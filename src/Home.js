@@ -54,7 +54,7 @@ export default function Home() {
  
          <div className="grid-item-2">
            <div className="image">
-             <img src="https://cunninghamapartments.imgix.net/Home_220.jpg" alt="" />
+             <img src="https://cunninghamapartments.imgix.net/Home_220.jpg?w=250" alt="" />
            </div>
          </div>
       </div>

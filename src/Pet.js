@@ -52,7 +52,7 @@ import {
   
           <div className="grid-item-2">
             <div className="image">
-              <img src="https://cunninghamapartments.imgix.net/Dog.png" alt="" />
+              <img src="https://cunninghamapartments.imgix.net/Dog.png?w=150" alt="" />
             </div>
           </div>
        </div>

@@ -51,7 +51,7 @@ export default function Utility() {
 
         <div className="grid-item-2">
           <div className="image">
-            <img src="https://cunninghamapartments.imgix.net/Cunningham_int_2.jpg" alt="" />
+            <img src="https://cunninghamapartments.imgix.net/Cunningham_int_2.jpg?w=100" alt="" />
           </div>
         </div>
      </div>
@@ -81,7 +81,7 @@ export default function Utility() {
       </Flex>
       <View height="100vh">
         <Image
-          src="https://cunninghamapartments.imgix.net/Cunningham_ext_3.jpg"
+          src="https://cunninghamapartments.imgix.net/Cunningham_ext_3.jpg?q=75&auto=format,compress"
           width="100%"
           height="100%"
           objectFit="cover"

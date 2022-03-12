@@ -65,7 +65,7 @@ import {
                <h3 className="title">Division of responsibility</h3>
                <p class="text">As a general rule owners are responsible for repairs and maintenance of their apartments. The body corporate is responsible for building maintenance. There can be dispute around the boundaries of this definition eg damage to your apartment front door. The Body Corporate in concert with the regulations will rule on contentious situations.</p>
                <h3 className="title">Insurance</h3>
-         <p className="text"> TBA</p>
+         <p className="text"> Should you have any queries the building insurance policy can be viewed on Slack and your Committee can answer any further questions</p>
             
              </div>
              
