@@ -17,7 +17,7 @@ import {
     Footer
   };
   
-  export default function Maintenance() {
+  export default function Flood() {
     const { tokens } = useTheme();
   
     return (
@@ -32,7 +32,7 @@ import {
                 
                <div className="navbar">
      <div className="container flex">
-       <h1 className="logo">&nbsp;&nbsp;&nbsp;Maintenance</h1>
+       <h1 className="logo">&nbsp;&nbsp;&nbsp;Flood</h1>
        <button className= "btn" onClick={signOut}>Sign out</button> 
      </div>
    </div>
@@ -41,7 +41,7 @@ import {
          <div className="grid">
            <div className="grid-item-1">
              <div className="showcase-text">
-               <h1> &nbsp;&nbsp;&nbsp;Shared Responsibility</h1>
+               <h1> &nbsp;&nbsp;&nbsp;Be Prepared</h1>
                <p className="supporting-text"></p>
              </div>
              <div className="showcase-form">
@@ -63,10 +63,26 @@ import {
            <div className="flex">
              <div className="stat">
                <i className="fa fa-folder-open fa-2x" aria-hidden="true"></i>
-               <h3 className="title">Division of responsibility</h3>
-               <p class="text">As a general rule owners are responsible for repairs and maintenance of their apartments. The body corporate is responsible for building maintenance. There can be dispute around the boundaries of this definition eg damage to your apartment front door. The Body Corporate in concert with the regulations will rule on contentious situations.</p>
-               <h3 className="title">Insurance</h3>
-         <p className="text"> Should you have any queries the building insurance policy can be viewed on Slack and your Committee can answer any further questions</p>
+               <h3 className="title">History</h3>
+               <p class="text">Twice in recent times, 2011 and 2022 our basement car park has flooded. These have been the result of rain water accumulating in our sump and not being able to be cleared and water ingress from flooded drains</p>
+               <p class="text">Your Committee is instuting actions and procedures to try and prevent this happening but in today's climate change world we must prepare for the worst.</p>
+               <h3 className="title">Actions</h3>
+         <p className="text"> Some initial actions are:
+         <ul>
+             <li> -If you are going away leave your car keys with someone local</li>
+             <li> -Elevate items in storage lockers as high as possible</li>
+             <li> -Prepare for possible loss of power</li>
+             <li> -Monitor 'Slack' for the latest information</li>
+             <li> -Check personal insurance policy re storage items and food items</li>
+        </ul>
+        <p class="text">Power Loss </p>
+        <ul>
+             <li> -Front door locks are disabled</li>
+             <li> -Have emergency lighting pre prepared</li>
+             <li> -Dont open refrigerator unless absolutely necessary</li>
+             <li> -Internet other than mobiles will be unavailable</li>
+        </ul>
+         </p>
             
              </div>
              

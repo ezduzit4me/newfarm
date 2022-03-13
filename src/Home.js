@@ -88,7 +88,7 @@ export default function Home() {
       </Flex>
       <View height="100vh">
         <Image
-          src="https://cunninghamapartments.imgix.net/Cunningham_ext_2.jpg"
+          src="https://cunninghamapartments.imgix.net/Cunningham_ext_2.jpg?auto=format,compress"
           width="100%"
           height="100%"
           objectFit="cover"

@@ -5,6 +5,7 @@ import Utility from './Utility'
 import Maintenance from './Maintenance'
 import Financial from './Financial'
 import Committee from './Committee'
+import Flood from './Flood'
 import Contact from './Contact'
 import Pet from './Pet'
 import Manager from './Manager'
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/contact" element= {<Contact/>} />
           <Route path="/pet" element= {<Pet/>} />
           <Route path="/manager" element= {<Manager/>} />
+          <Route path="/flood" element= {<Flood/>} />
     </Routes>  
     </div> 
 )}

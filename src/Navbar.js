@@ -43,6 +43,7 @@ export function Navbar() {
       <li class="nav"><Link to= "manager">Manager</Link></li>
       <li class="nav"><Link to= "maintenance">Maintenance</Link></li>
        <li class="nav"><Link to= "financial">Financial</Link></li>
+       <li class="nav"><Link to= "flood">Flood</Link></li>
        </ul>
       </div>
 

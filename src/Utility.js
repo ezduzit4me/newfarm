@@ -82,7 +82,7 @@ export default function Utility() {
       </Flex>
       <View height="100vh">
         <Image
-          src="https://cunninghamapartments.imgix.net/Cunningham_ext_3.jpg?q=75&auto=format,compress"
+          src="https://cunninghamapartments.imgix.net/Cunningham_ext_3.jpg?auto=format,compress"
           width="100%"
           height="100%"
           objectFit="cover"
