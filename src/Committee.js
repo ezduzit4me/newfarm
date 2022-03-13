@@ -9,7 +9,7 @@ import {
   
   import { Header } from "./Header";
   import { Footer } from "./Footer";
-  
+ 
   
   const components = {
     Header,
@@ -32,6 +32,7 @@ import {
           <Authenticator components={components}>
             {({ signOut, user }) => (
                <div>
+                
                <div className="navbar">
      <div className="container flex">
        <h1 className="logo">Committee</h1>

@@ -31,8 +31,11 @@ export default function Home() {
 
         <Authenticator components={components}>
           {({ signOut, user }) => (
+            
              <div>
+              
              <div className="navbar">
+            
    <div className="container flex">
      <h1 className="logo">Home</h1>
      <button className= "btn" onClick={signOut}>Sign out</button> 

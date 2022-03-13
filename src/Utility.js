@@ -29,6 +29,7 @@ export default function Utility() {
         <Authenticator components={components}>
           {({ signOut, user }) => (
             <div>
+             
             <div className="navbar">
   <div className="container flex">
     <h1 className="logo">Utilities</h1>

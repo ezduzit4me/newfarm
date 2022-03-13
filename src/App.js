@@ -1,5 +1,5 @@
 import { Authenticator } from "@aws-amplify/ui-react";
-import { Amplify } from "aws-amplify";
+import Amplify, { Auth } from 'aws-amplify'
 import { Routes,Route } from "react-router-dom";
 import Utility from './Utility'
 import Maintenance from './Maintenance'
@@ -9,8 +9,8 @@ import Contact from './Contact'
 import Pet from './Pet'
 import Manager from './Manager'
 import Home from './Home'
-
-
+import {useState, useEffect} from 'react'
+import Navbar from './Navbar';
 import "./styles.css";
 import "./newstyles.css";
 import awsExports from "./aws-exports";
@@ -18,13 +18,23 @@ Amplify.configure(awsExports);
 
 export default function App() {
  
-   
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  useEffect(() => {
+    Auth.currentAuthenticatedUser()
+      .then(() => {
+        setIsAuthenticated(true)
+      })
+      .catch(err => setIsAuthenticated(false))
+  }, [])
 
    
   return  (
     <Authenticator>
     {({ signOut, user }) => (
       <div className="App">
+       if {!isAuthenticated} {
+         <Navbar />
+       }
   <Routes>
           <Route path="/" element=  {<Home/>} /> 
           <Route path="/utility" element= {<Utility/>} />  

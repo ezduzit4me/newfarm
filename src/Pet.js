@@ -10,7 +10,6 @@ import {
   import { Header } from "./Header";
   import { Footer } from "./Footer";
   
-  
   const components = {
     Header,
     
@@ -30,9 +29,10 @@ import {
             {({ signOut, user }) => (
               
               <div>
+                
               <div className="navbar">
     <div className="container flex">
-      <h1 className="logo">&nbsp;&nbsp;&nbsp;Pets</h1>
+      <h1 className="logo">Pets</h1>
       <button className= "btn" onClick={signOut}>Sign out</button> 
     </div>
   </div>

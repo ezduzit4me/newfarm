@@ -9,7 +9,7 @@ import {
   
   import { Header } from "./Header";
   import { Footer } from "./Footer";
-  
+
   
   const components = {
     Header,
@@ -31,6 +31,7 @@ import {
 
               
               <div>
+                
               <div className="navbar">
     <div className="container flex">
       <h1 className="logo">&nbsp;&nbsp;&nbsp;Contacts</h1>
