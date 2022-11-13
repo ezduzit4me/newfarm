@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Menu } from 'semantic-ui-react';
-import { Link } from "@reach/router";
+
 
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import { Storage } from "aws-amplify";
@@ -15,7 +15,7 @@ function Upload() {
         return !user ? (
             <div></div>
         ) : (
-                <div>Welcome {user.username} (<Link to="/" onClick={onSignOut}>Sign Out</Link>)</div>
+                <div>Welcome {user.username} ( onClick={onSignOut}>Sign Out)</div>
             );
     }
 
@@ -58,7 +58,7 @@ function Upload() {
         <div>
             <Menu fixed='top' borderless inverted>
                 <Container>
-                    <Menu.Item as={Link} to='/' header>
+                    <Menu.Item  header>
                         Amplify S3 Uploader
             </Menu.Item>
 
