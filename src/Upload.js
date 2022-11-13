@@ -1,64 +1,90 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import { Container, Menu } from 'semantic-ui-react';
+import { Link } from "@reach/router";
 
-import { configureAmplify, SetS3Config } from "./services";
-import Storage from "@aws-amplify/storage";
-import "./styles.css";
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import { Storage } from "aws-amplify";
+import useAmplifyAuth from './useAmplifyAuth';
 
-class Upload extends Component {
-  state = {
-    imageName: "",
-    imageFile: "",
-    response: ""
-  };
+export const UserContext = React.createContext();
 
-  uploadImage = () => {
-    SetS3Config("cunninghamdocuments", "protected");
-    Storage.put(`userimages/${this.upload.files[0].name}`,
-                this.upload.files[0],
-                { contentType: this.upload.files[0].type })
-      .then(result => {
-        this.upload = null;
-        this.setState({ response: "Success uploading file!" });
-      })
-      .catch(err => {
-        this.setState({ response: `Cannot uploading file: ${err}` });
-      });
-  };
+function Upload() {
+    const { state: { user }, onSignOut } = useAmplifyAuth();
 
-  render() {
-    return (
-      <div className="App">
-        <h2>S3 Upload example...</h2>
-        <input
-          type="file"
-          accept="image/png, image/jpeg"
-          style={{ display: "none" }}
-          ref={ref => (this.upload = ref)}
-          onChange={e =>
-            this.setState({
-              imageFile: this.upload.files[0],
-              imageName: this.upload.files[0].name
+    function UserData(props) {
+        return !user ? (
+            <div></div>
+        ) : (
+                <div>Welcome {user.username} (<Link to="/" onClick={onSignOut}>Sign Out</Link>)</div>
+            );
+    }
+
+    const [loading, setLoading] = useState(false);
+
+    const handleChange = async (e) => {
+        const fileContent = e.target.files[0]
+        /*const fileName = e.target.files[0].name*/
+        const fileType = e.target.files[0].type
+
+        let ext = fileContent.name.split(".").pop().toLowerCase();
+        let fileFormats = ["csv"];
+        if (!fileFormats.includes(ext)) {
+            console.log("Invalid file format");
+            return false;
+        }
+
+        let fileName =
+            "data/" +
+            fileContent.name.substr(0, fileContent.name.indexOf(ext) - 1) +
+            "." +
+            ext;
+
+        try {
+            setLoading(true);
+            // Upload the file to s3 with private access level.
+            await Storage.put(fileName, fileContent, {
+                contentType: fileType,
+                level: 'private',
+                progressCallback(progress) {
+                    console.log(`Uploaded: ${progress.loaded}/${progress.total}`);
+                },
             })
-          }
-        />
-        <input value={this.state.imageName} placeholder="Select file" />
-        <button
-          onClick={e => {
-            this.upload.value = null;
-            this.upload.click();
-          }}
-          loading={this.state.uploading}
-        >
-          Browse
-        </button>
+            setLoading(false);
+        } catch (err) {
+            console.log(err);
+        }
+    }
+    return (
+        <div>
+            <Menu fixed='top' borderless inverted>
+                <Container>
+                    <Menu.Item as={Link} to='/' header>
+                        Amplify S3 Uploader
+            </Menu.Item>
 
-        <button onClick={this.uploadImage}> Upload File </button>
+                    <Menu.Menu position='right'>
+                        <Menu.Item>
+                            <UserData></UserData>
+                        </Menu.Item>
+                    </Menu.Menu>
+                </Container>
+            </Menu>
 
-        {!!this.state.response && <div>{this.state.response}</div>}
-      </div>
+            <Container text style={{ marginTop: '5em' }}>
+                <UserContext.Provider user={user}>
+                    <div className="App">
+                        <h1> Upload CSV File to S3 </h1>
+                        {loading ? <h3>Uploading...</h3> : <input
+                            type="file" accept="text/csv"
+                            onChange={(evt) => handleChange(evt)}
+                        />}
+                    </div>
+                </UserContext.Provider>
+            </Container>
+        </div>
+
     );
-  }
 }
 
-configureAmplify();
-export default Upload
+// withAuthenticator wraps your App with a Login component
+export default withAuthenticator(Upload);

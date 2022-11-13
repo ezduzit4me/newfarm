@@ -13,9 +13,12 @@
     },
     "categories": {
       "auth": {
-        "newfarmfa3d7944": {}
+        "newfarmfa3d7944": {},
+        "userPoolGroups": {}
+      },
+      "storage": {
+        "docs": {}
       }
     }
   }
-  
 }

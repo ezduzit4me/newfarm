@@ -1,0 +1,13 @@
+{
+  "resourceName": "docs",
+  "policyUUID": "0e2ce37f",
+  "bucketName": "newfarmbc2a76c5bd06460fb06f77e7e5b867e5",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE"
+}
