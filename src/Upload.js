@@ -15,7 +15,7 @@ function Upload() {
         return !user ? (
             <div></div>
         ) : (
-                <div>Welcome {user.username} ( onClick={onSignOut}>Sign Out)</div>
+                <div>Welcome {user.username} ( onClick={onSignOut}Sign Out)</div>
             );
     }
 
@@ -87,4 +87,4 @@ function Upload() {
 }
 
 // withAuthenticator wraps your App with a Login component
-export default (Upload);
+export default Upload;
