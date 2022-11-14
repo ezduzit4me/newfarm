@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Menu } from 'semantic-ui-react';
 
 
-import { withAuthenticator } from '@aws-amplify/ui-react';
+// import { withAuthenticator } from '@aws-amplify/ui-react';
 import { Storage } from "aws-amplify";
 import useAmplifyAuth from './useAmplifyAuth';
 
@@ -27,7 +27,7 @@ function Upload() {
         const fileType = e.target.files[0].type
 
         let ext = fileContent.name.split(".").pop().toLowerCase();
-        let fileFormats = ["csv"];
+        let fileFormats = ["pdf"];
         if (!fileFormats.includes(ext)) {
             console.log("Invalid file format");
             return false;
@@ -73,9 +73,9 @@ function Upload() {
             <Container text style={{ marginTop: '5em' }}>
                 <UserContext.Provider user={user}>
                     <div className="App">
-                        <h1> Upload CSV File to S3 </h1>
+                        <h1> Upload PDF to S3 </h1>
                         {loading ? <h3>Uploading...</h3> : <input
-                            type="file" accept="text/csv"
+                            type="file" accept="pdf"
                             onChange={(evt) => handleChange(evt)}
                         />}
                     </div>
@@ -87,4 +87,4 @@ function Upload() {
 }
 
 // withAuthenticator wraps your App with a Login component
-export default withAuthenticator(Upload);
+export default (Upload);
