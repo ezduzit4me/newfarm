@@ -8,7 +8,8 @@ import Committee from './Committee'
 import Flood from './Flood'
 import Contact from './Contact'
 import Pet from './Pet'
-import Upload from './Upload'
+import Document from './Document'
+import List from './List'
 import Manager from './Manager'
 import Home from './Home'
 import {useState, useEffect} from 'react'
@@ -47,7 +48,11 @@ export default function App() {
           <Route path="/pet" element= {<Pet/>} />
           <Route path="/manager" element= {<Manager/>} />
           <Route path="/flood" element= {<Flood/>} />
-          <Route path="/upload" element= {<Upload/>} />
+          <Route path="/document" element= {<Document/>} />
+          <Route path="/list" element= {<List/>} />
+          
+          
+          
     </Routes>  
     </div> 
 )}

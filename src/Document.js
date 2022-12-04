@@ -1,29 +1,29 @@
-import React, { useState } from "react";
-import { Container, Menu } from 'semantic-ui-react';
 
+
+import React, { useState } from "react";
+import { Container} from 'semantic-ui-react';
+
+// import { listDocuments } from './graphql/queries';
+//import { API, graphqlOperation } from 'aws-amplify';
 
 // import { withAuthenticator } from '@aws-amplify/ui-react';
 import { Storage } from "aws-amplify";
-import useAmplifyAuth from './useAmplifyAuth';
+//import useAmplifyAuth from './useAmplifyAuth';
+
 
 export const UserContext = React.createContext();
 
-function Upload() {
-    const { state: { user }, onSignOut } = useAmplifyAuth();
+function Document() { 
 
-    function UserData(props) {
-        return !user ? (
-            <div></div>
-        ) : (
-                <div>Welcome {user.username} ( onClick={onSignOut}Sign Out)</div>
-            );
-    }
+    
 
-    const [loading, setLoading] = useState(false);
+    
 
-    const handleChange = async (e) => {
+        const [loading, setLoading] = useState(false);
+
+        const handleChange = async (e) => {
         const fileContent = e.target.files[0]
-        /*const fileName = e.target.files[0].name*/
+       /* const fileName = e.target.files[0].name */
         const fileType = e.target.files[0].type
 
         let ext = fileContent.name.split(".").pop().toLowerCase();
@@ -54,37 +54,33 @@ function Upload() {
             console.log(err);
         }
     }
+
+
+
     return (
         <div>
-            <Menu fixed='top' borderless inverted>
-                <Container>
-                    <Menu.Item  header>
-                        Amplify S3 Uploader
-            </Menu.Item>
-
-                    <Menu.Menu position='right'>
-                        <Menu.Item>
-                            <UserData></UserData>
-                        </Menu.Item>
-                    </Menu.Menu>
-                </Container>
-            </Menu>
+            
 
             <Container text style={{ marginTop: '5em' }}>
-                <UserContext.Provider user={user}>
+               
+               
                     <div className="App">
-                        <h1> Upload PDF to S3 </h1>
+                    
+    
+                        <h1> Upload PDF to Amazon S3 </h1>
                         {loading ? <h3>Uploading...</h3> : <input
                             type="file" accept="pdf"
                             onChange={(evt) => handleChange(evt)}
                         />}
+
+ 
                     </div>
-                </UserContext.Provider>
+                
             </Container>
         </div>
 
     );
-}
+    }
 
 // withAuthenticator wraps your App with a Login component
-export default Upload;
+export default Document;

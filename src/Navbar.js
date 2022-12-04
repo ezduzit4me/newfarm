@@ -44,6 +44,11 @@ export function Navbar() {
       <li class="nav"><Link to= "maintenance">Maintenance</Link></li>
        <li class="nav"><Link to= "financial">Financial</Link></li>
        <li class="nav"><Link to= "flood">Flood</Link></li>
+       <li class="nav"><Link to= "document">Document</Link></li>
+       <li class="nav"><Link to= "list">List</Link></li>
+       
+      
+      
        </ul>
       </div>
 
