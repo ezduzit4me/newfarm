@@ -1,6 +1,6 @@
 
 
-import { useAuthenticator } from "@aws-amplify/ui-react";
+// import { useAuthenticator } from "@aws-amplify/ui-react";
 import { Amplify } from "aws-amplify";
 import { Routes,Route } from "react-router-dom";
 import Utility from './Utility'
@@ -43,5 +43,5 @@ export default function App() {
     
   }
 
-  return <Login />;
-}
+ return <Login />;
+ }
