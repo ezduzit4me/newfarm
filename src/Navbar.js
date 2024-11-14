@@ -18,6 +18,7 @@ export function Navbar() {
 <Grid templateColumns={{ base: "1fr 0"}}>
       
       <Flex
+
       
       
         backgroundColor={tokens.colors.background.secondary}
